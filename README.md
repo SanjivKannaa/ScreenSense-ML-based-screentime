@@ -1,16 +1,19 @@
 # CSPC54_AIML
+A Screen Time browser extension that uses Machine Learning.
 
-A scrapper that uses to classify a given URL.
-
-## Requirements
-- Docker
+## Tech Stack
+- Backend - Python
+- Frontend - HTML, CSS, JS
 
 ## Setup
 - Clone the repo
-- Add the ml model from https://drive.google.com/drive/folders/1JIWiSIduy6vmH8Ktt12ARytCz9MLG_Ee?usp=sharing to the following locations
-    - ML/fine_tuned_model_roberta/model.bin
 - Run 
 ```bash
- $ docker-compose up
- ```
- 
+$ cd backend
+$ pip3 install -r requirements.txt
+$ python3 API.py
+```
+- Go to your browser extention menu
+- Enable Developer Mode
+- Import all the files in the directory "browser_ext/" using option "Load Unpacked"
+- Open the browser extension to view statistics.
