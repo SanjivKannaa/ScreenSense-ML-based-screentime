@@ -1,0 +1,15 @@
+pandas
+numpy
+scipyseaborn
+matplotlib
+io
+sklearn
+IPython
+wordcloud
+BeautifulSoup4
+collections
+urllib
+spacy
+en_core_web_sm
+flask
+sqlite3
