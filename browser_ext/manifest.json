@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "ScreenTime Extension",
+  "version": "1.0",
+  "permissions": [
+    "http://localhost:1234/get_stats",
+    "http://localhost:1234/add_to_logs"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "index.html"
+  }
+}

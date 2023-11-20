@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ScreenTime</title>
+  <style>
+    /* Basic CSS for the progress bars */
+    .progress-bar {
+      width: 300px;
+      height: 20px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+
+    .progress {
+      height: 100%;
+      background-color: #4CAF50;
+      text-align: center;
+      line-height: 20px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+    <h>Travel</h>
+    <div class="progress-bar" id="progressBar1">
+        <div class="progress"></div>
+    </div>
+    
+    <h>Social Networking and Messaging</h>
+    <div class="progress-bar" id="progressBar1">
+        <div class="progress"></div>
+    </div>
+    
+    <h>News</h>
+    <div class="progress-bar" id="progressBar1">
+        <div class="progress"></div>
+    </div>
+    
+    <h>Streaming Services</h>
+    <div class="progress-bar" id="progressBar1">
+        <div class="progress"></div>
+    </div>
+    
+    <h>Sports</h>
+    <div class="progress-bar" id="progressBar1">
+        <div class="progress"></div>
+    </div>
+    
+    <h>Photography</h>
+    <div class="progress-bar" id="progressBar1">
+        <div class="progress"></div>
+    </div>
+    
+    <h>Law and Government</h>
+    <div class="progress-bar" id="progressBar1">
+        <div class="progress"></div>
+    </div>
+    
+    <h>Health and Fitness</h>
+    <div class="progress-bar" id="progressBar1">
+        <div class="progress"></div>
+    </div>
+        
+    <h>Games</h>
+    <div class="progress-bar" id="progressBar1">
+        <div class="progress"></div>
+    </div>
+
+    <h>E-Commerce</h>
+    <div class="progress-bar" id="progressBar1">
+        <div class="progress"></div>
+    </div>
+    
+    <h>Forums</h>
+    <div class="progress-bar" id="progressBar1">
+        <div class="progress"></div>
+    </div>
+    
+    <h>Food</h>
+    <div class="progress-bar" id="progressBar1">
+        <div class="progress"></div>
+    </div>
+    
+    <h>Education</h>
+    <div class="progress-bar" id="progressBar1">
+        <div class="progress"></div>
+    </div>
+    
+    <h>Computers and Technology</h>
+    <div class="progress-bar" id="progressBar1">
+        <div class="progress"></div>
+    </div>
+    
+    <h>Business/Corporate</h>
+    <div class="progress-bar" id="progressBar1">
+        <div class="progress"></div>
+    </div>
+    
+    <h>Adult</h>
+    <div class="progress-bar" id="progressBar1">
+        <div class="progress"></div>
+    </div>
+
+
+    <script>
+        // Fetch data from API and update progress bars
+        async function fetchDataAndUpdateBars() {
+          try {
+            const response = await fetch('http://localhost:1234/get_stats');
+            const data = await response.json();
+    
+            const progressBar1 = document.getElementById('progressBar1');
+            const progressBar2 = document.getElementById('progressBar2');
+            const progressBar3 = document.getElementById('progressBar3');
+            const progressBar4 = document.getElementById('progressBar4');
+            const progressBar5 = document.getElementById('progressBar5');
+            const progressBar6 = document.getElementById('progressBar6');
+            const progressBar7 = document.getElementById('progressBar7');
+            const progressBar8 = document.getElementById('progressBar8');
+            const progressBar9 = document.getElementById('progressBar9');
+            const progressBar10 = document.getElementById('progressBar10');
+            const progressBar11 = document.getElementById('progressBar11');
+            const progressBar12 = document.getElementById('progressBar12');
+            const progressBar13 = document.getElementById('progressBar13');
+            const progressBar14 = document.getElementById('progressBar14');
+            const progressBar15 = document.getElementById('progressBar15');
+            const progressBar16 = document.getElementById('progressBar16');
+            
+            // Update the width of the progress bars based on fetched data
+            progressBar1.querySelector('.progress').style.width = `${data[progress1]}%`;
+            progressBar1.querySelector('.progress').style.width = `${data[progress2]}%`;
+            progressBar1.querySelector('.progress').style.width = `${data[progress3]}%`;
+            progressBar1.querySelector('.progress').style.width = `${data[progress4]}%`;
+            progressBar1.querySelector('.progress').style.width = `${data[progress5]}%`;
+            progressBar1.querySelector('.progress').style.width = `${data[progress6]}%`;
+            progressBar1.querySelector('.progress').style.width = `${data[progress7]}%`;
+            progressBar1.querySelector('.progress').style.width = `${data[progress8]}%`;
+            progressBar1.querySelector('.progress').style.width = `${data[progress9]}%`;
+            progressBar1.querySelector('.progress').style.width = `${data[progress10]}%`;
+            progressBar1.querySelector('.progress').style.width = `${data[progress11]}%`;
+            progressBar1.querySelector('.progress').style.width = `${data[progress12]}%`;
+            progressBar1.querySelector('.progress').style.width = `${data[progress13]}%`;
+            progressBar1.querySelector('.progress').style.width = `${data[progress14]}%`;
+            progressBar1.querySelector('.progress').style.width = `${data[progress15]}%`;
+            progressBar1.querySelector('.progress').style.width = `${data[progress16]}%`;
+          } catch (error) {
+            console.error('Error fetching data:', error);
+          }
+        }
+      </script>
+</body>
+</html>
