@@ -1,8 +1,8 @@
 pandas
 numpy
-scipyseaborn
+scipy
+seaborn
 matplotlib
-io
 sklearn
 IPython
 wordcloud
@@ -13,3 +13,4 @@ spacy
 en_core_web_sm
 flask
 sqlite3
+flask_cors

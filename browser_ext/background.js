@@ -1,3 +1,5 @@
+window.addEventListener('popstate', sendURLToServer); //Sends when website is changed
+
 // Function to send URL to the server
 async function sendURLToServer() {
     try {
