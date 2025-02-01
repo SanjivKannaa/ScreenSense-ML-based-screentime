@@ -1,4 +1,4 @@
-# CSPC54_AIML
+# ScreenSense - ML based screen time
 A Screen Time browser extension that uses Machine Learning.
 
 ## Tech Stack
